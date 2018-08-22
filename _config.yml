@@ -17,8 +17,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-gems: [jekyll-paginate, jekyll-feed, jekyll-seo-tag]
-
 collections:
   docs:
     permalink: /:collection/
@@ -27,4 +25,8 @@ collections:
     permalink: /:categories/:year/:month/:day/:title.html
     output: true
 plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
   - jemoji

@@ -13,7 +13,7 @@ categories: technical
 # Containerize and deploy spring boot app to aws in 10 mins
 In this tutorial, we will create a simple spring boot app, containarize it and deploy to aws. Goal was to create in 10 mins but it took slightly more than 10 mins :smiley:
 ## Demo screencast
-<iframe width="560" height="315" src="https://youtu.be/j-gWUiIimoU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j-gWUiIimoU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Pre-requisites
  - Java JDK 8 or above

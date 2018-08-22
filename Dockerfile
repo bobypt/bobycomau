@@ -18,9 +18,11 @@ RUN \
     ruby2.3 \
     ruby2.3-dev
 
+RUN apt-get install zlib1g-dev -y    
+
 RUN gem install jekyll --no-ri --no-rdoc
 
-RUN gem install jekyll-sitemap jekyll-feed jekyll-paginate jekyll-seo-tag
+RUN gem install jekyll-sitemap jekyll-feed jekyll-paginate jekyll-seo-tag jemoji
 
 RUN apt-get install wget
 # ADD nginx.conf /etc/nginx/nginx.conf
