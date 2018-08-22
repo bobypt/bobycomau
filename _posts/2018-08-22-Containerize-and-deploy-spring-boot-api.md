@@ -93,7 +93,7 @@ You can directly build the above dockerfile but we will use (Docker Gradle Plugi
 
 - Add docker gradle plugin to `build.gradle`
 
-```
+```groovy
 buildscript {
 ....
 	repositories {
