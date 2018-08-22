@@ -11,7 +11,9 @@ categories: technical
 
 
 # Containerize and deploy spring boot app to aws in 10 mins
-In this tutorial, we will containarize and deploy a simple java spring boot app to aws.
+In this tutorial, we will create a simple spring boot app, containarize it and deploy to aws. Goal was to create in 10 mins but it took slightly more than 10 mins :smiley:
+## Demo screencast
+<iframe width="560" height="315" src="https://youtu.be/j-gWUiIimoU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Pre-requisites
  - Java JDK 8 or above
@@ -55,6 +57,7 @@ public class DemoController {
 
  ```
  - Build the project again
+
 ```
 ./gradlew clean build
 ```
@@ -87,7 +90,7 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 
 ## Build docker images
 
-You can directly build the above dockerfile but we will use (Docker Gradle Plugin)[https://github.com/palantir/gradle-docker] so that creating java artefacts and building docker image can be done in one single step.
+You can directly build the above dockerfile but we will use [Docker Gradle Plugin](https://github.com/palantir/gradle-docker) so that creating java artefacts and building docker image can be done in one single step.
 
 
 
@@ -124,6 +127,7 @@ docker {
 
 ```
 - Build a new image with latest code
+
 ```
 ./gradlew build docker
 ```
@@ -141,7 +145,7 @@ docker run -p 8080:8080 -t org.bpt/demo
 ```
 
 Use curl commands above and make sure that application is running successfully. You have successfully created docker image of your application.
-
+Please see more information on dockerizing spring boot application (here)[https://spring.io/guides/gs/spring-boot-docker/]
 
 ## Push image to Amazon Elastic Container Registry(ECR)
 
@@ -163,29 +167,34 @@ An error occurred (AccessDeniedException) when calling the GetAuthorizationToken
 - Tag the docker image
 
 ```
-docker tag org.bpt/demo:latest 708464146667.dkr.ecr.ap-southeast-2.amazonaws.com/spring-boot-demo:latest
+docker tag org.bpt/demo:latest <repo-url>
 ```
 
 - Push image to ECR
+
 ```
-docker push 708464146667.dkr.ecr.ap-southeast-2.amazonaws.com/spring-boot-demo:latest
+docker push <repo-url>
 ```
 
 - Go to aws console and make sure that the image is present in the repository.
 
 ## Run the new image in aws
 
-- Create a new Task definition. Please follow the video for details.
+Please check the screencast for demo.
+
+- Create container definition
+
+- Create task definition
+
+- Create Service
+
+- Configure cluster and run it.
+
+Health endpoint configuration is 
 
 ```
 CMD-SHELL, curl localhost:8080/actuator/health || exit 1
 ```
 
-
-- Create cluster
-
-- Run task
-
-
 ## Conclusion
-In this demo, we created, dockerized and deployed a simple spring boot application. Next step, we will create a VPC with private subnets, run the container inside  private subnets and use a public facing load balancer to route traffic to containers running in multi AZs.
+In this demo, we created, dockerized and deployed a simple spring boot application. In a more realistic example, we will probbaly have an API gateway in front of the ECS cluster for authentication/authorization/api management/ throttling/caching etc. This is to show how easy it is to deploy a spring-boot app to aws.

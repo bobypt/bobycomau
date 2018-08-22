@@ -26,4 +26,5 @@ collections:
   posts:
     permalink: /:categories/:year/:month/:day/:title.html
     output: true
-
+plugins:
+  - jemoji
