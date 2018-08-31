@@ -15,7 +15,7 @@ In this multipart series, we will see a practical example of deploying microserv
 
 ## Steps
  - Containerising API server - [Part 1]({% post_url 2018-08-30-Containerize-and-deploy-node-api %}) 
- - Create network infrastructure for secure deployment of applications. ```TODO```
+ - Create network infrastructure for secure deployment of applications. [Part 2]({% post_url 2018-09-01-Create-VPC-Public-Private-Subnet %})
  - Deploying containers. ```TODO```
  - Scaling up and down. ```TODO```
  - Seamlessly updating (deploying a new version of API) the server without an outage. ```TODO```
