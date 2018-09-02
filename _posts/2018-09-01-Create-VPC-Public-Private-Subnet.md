@@ -23,7 +23,9 @@ We will create a VPC with two public and private subnets in two different availa
  - PublicSubnetOne => 10.0.0.0/24 => 10.0.0.0 - 10.0.0.255
  - PublicSubnetTwo => 10.0.1.0/24 => 10.0.1.0 - 10.0.1.255
  - PrivateSubnetOne => 10.0.100.0/24 => 10.0.100.0 - 10.0.100.255
- - PrivateSubnetOne => 10.0.101.0/24 => 10.0.101.0 - 10.0.101.255
+ - PrivateSubnetTwo => 10.0.101.0/24 => 10.0.101.0 - 10.0.101.255
 
 ## Cloudformation
 Use cloudformation [script](https://github.com/bobypt/docker-node/blob/master/aws/cloudformation/vpc-network.yml) to create VPC automatically.
+
+
