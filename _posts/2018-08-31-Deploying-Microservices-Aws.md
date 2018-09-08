@@ -10,7 +10,14 @@ categories: technical
 ---
 
 
+
 # Deploying microservices to AWS  
+
+## Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/915ePPMwVCk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Architecture
+![Architecture](/diagrams/aws/microservices-aws-fargate.png){:class="img-responsive"}
 
 This is a reference architecture for deploying microservices to aws. 
  - Services are deployed to aws in docker containers. 
@@ -28,17 +35,12 @@ This is a reference architecture for deploying microservices to aws.
     - Easy to add new serices to the service landscape.
     - Deployments/ update to services without an outage. 
 
-## Architecture
-![Architecture](/diagrams/aws/microservices-aws-fargate.png){:class="img-responsive"}
-
 ## Code
-
 Follow github link [here](https://github.com/bobypt/microservices-aws-fargate)
 
 ## Detailed descriptions
  - Containerising API server - [Part 1]({% post_url 2018-08-30-Containerize-and-deploy-node-api %}) 
  - Create network infrastructure for secure deployment of applications. [Part 2]({% post_url 2018-09-01-Create-VPC-Public-Private-Subnet %})
- - Deploying containers. ```TODO```
  - Scaling up and down. ```TODO```
  - Seamlessly updating (deploying a new version of API) the server without an outage. ```TODO```
 
