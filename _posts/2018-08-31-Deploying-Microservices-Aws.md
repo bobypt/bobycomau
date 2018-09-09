@@ -1,6 +1,6 @@
 ---
 layout:     default
-title:      "Deploying microservices to AWS"
+title:      "Reference architecture to deploy microservices to AWS"
 subtitle:   "Deploying microservices to AWS"
 description: "Deploying microservices to AWS"
 date:       2018-08-30 12:00:00
@@ -9,9 +9,14 @@ header-img: "images/logo_black.png"
 categories: technical
 ---
 
+# Reference architecture to deploy microservices to AWS
+## Goals
+ - Simple
+ - Reliable  
+ - Cost effective
+ - Seamless updation  of existing services.
+ - Easy to add new services.
 
-
-# Deploying microservices to AWS  
 
 ## Demo
 <iframe width="560" height="315" src="https://www.youtube.com/embed/915ePPMwVCk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
