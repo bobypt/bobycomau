@@ -18,9 +18,10 @@ kramdown:
   syntax_highlighter: rouge
 
 collections:
-  docs:
-    permalink: /:collection/
+  oauth2:
     output: true
+    permalink: /:collection/:name
+    sort_by: order
   posts:
     permalink: /:categories/:year/:month/:day/:title.html
     output: true
@@ -30,3 +31,4 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jemoji
+  - jekyll-redirect-from
