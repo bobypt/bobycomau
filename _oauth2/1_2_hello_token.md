@@ -1,5 +1,6 @@
 ---
 name: Hello Token
+layout: default
 ---
 ## Hello token 
 
