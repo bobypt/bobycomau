@@ -11,7 +11,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 5
-exclude: ["less","Dockerfile","README.md"]
+exclude: ["less","Dockerfile","README.md", "*.excalidraw"]
 author: Boby Thomas
 kramdown:
   input: GFM
