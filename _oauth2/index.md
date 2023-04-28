@@ -31,7 +31,7 @@ Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on le
 ## 04 - OAuth Grant types
  - Authorization code
  - PKCE
- - Client credentials
+ - [Client credentials](/oauth2/4-3-client-credentials)
  - Device token
  - Rehresh Token
  - JWT bearer
