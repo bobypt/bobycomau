@@ -18,7 +18,7 @@ Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on le
 ## 02 - Playground
   - [Start playground](/oauth2/2-1-playground)
   - [Hello Token example](/oauth2/2-2-hello-token)
-  - Playground architecture
+  - [Playground architecture](/oauth2/2-3-playground-architecture)
   
 
 ## 03 - Tokens
@@ -31,9 +31,10 @@ Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on le
 ## 04 - OAuth Grant types
  - Authorization code
  - PKCE
- - [Client credentials](/oauth2/4-3-client-credentials)
+ - [Client credentials - Using opaque tokens](/oauth2/4-3-1-client-credentials-opaque-token) 
+ - [Client credentials - Using self contained tokens (JWT)](/oauth2/4-3-2-client-credentials-jwt-token)
  - Device token
- - Rehresh Token
+ - Refresh Token
  - JWT bearer
  - Implicit flow (Legacy)
  - Password grant (Legacy)
@@ -55,9 +56,10 @@ Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on le
  - Token revocation
 
 
-## 07 - Demonstate proof of possession (DPoP)
- - tls-bound-token
-
+## 07 - Proof of possession
+ - tls-bound-token (mTLS)
+ - Demonstration of Proof-of-Possession(DPoP)
+ 
 ## 08 - Auth2 vs OpenID
 
 

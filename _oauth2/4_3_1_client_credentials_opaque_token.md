@@ -2,7 +2,7 @@
 name: Setup playground
 layout: default
 ---
-# Grant type - client credentials
+# Grant type - client credentials using opaque tokens
 
 ## Client credentials - Opaque token
 
