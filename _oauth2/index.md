@@ -46,8 +46,9 @@ Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on le
 
 
 ## 05 - Client Authentication
- - Client ID / Secret
- - Private key JWT
+ - Client secret basic (Client ID / Secret)
+ - Client secret post (Client ID / Secret)
+ - [Private key JWT](/oauth2/5-3-private-key-jwt)
  - mutual TLS
  
 

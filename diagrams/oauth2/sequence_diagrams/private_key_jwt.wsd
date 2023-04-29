@@ -1,0 +1,17 @@
+@startuml
+!include ./puml-theme-boby.puml
+autonumber
+
+title Private Key JWT Client Authentication
+
+actor Client
+participant "OAuth2 Authorization Server" as AS
+
+Client -> AS: Send token request with JWT
+AS -> Client: Request public key via jwks url
+Client -> AS: public key
+AS -> AS: Verify JWT signature using public key
+AS -> Client: Issue access token
+Client -> AS: Access protected resource with token
+
+@enduml
