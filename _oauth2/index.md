@@ -8,6 +8,13 @@ redirect_from: /oauth2/home
 
 
 # OAuth 2.0 for Java Developers: Explore, Learn, and Experiment!
+
+![Playground](/diagrams/oauth2/gifs/oauth2-playground-commandline.gif){:class="w-75"}
+
+
+![Security](/images/oAuth2/security1.png){:class="w-25"}
+
+
 Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on learning experience that allows developers to explore and experiment with OAuth 2.0 security concepts in a local playground environment. This includes diving under the hood of OAuth 2.0, studying real-world examples, and implementing OAuth 2.0 security with Spring Boot and Spring Authorization Server. With this playground, Java developers can gain practical experience in securing their applications with OAuth 2.0, all in a safe and controlled environment.
 
 ## 01 - Introduction
@@ -46,10 +53,12 @@ Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on le
 
 
 ## 05 - Client Authentication
- - Client secret basic (Client ID / Secret)
- - Client secret post (Client ID / Secret)
+ - [Client secret basic (Client ID / Secret)](/oauth2/5-1-client-secret-basic)
+ - [Client secret post (Client ID / Secret)](/oauth2/5-2-client-secret-post)
+ - [Client secret basic vs Client secret post](/oauth2/5-2-1-basic-vs-post)
  - [Private key JWT](/oauth2/5-3-private-key-jwt)
- - mutual TLS
+ - [mutual TLS](/oauth2/5-4-mutual-tls)
+ - [Mutual TLS (TLS bound token) VS Client secret post](/oauth2/5-4-1-mutual-tls-vs-client-secret-post) 
  
 
 ## 06 - Token management

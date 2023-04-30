@@ -1,0 +1,18 @@
+@startuml
+!include ./puml-theme-boby.puml
+autonumber
+
+actor Client
+participant AuthorizationServer
+participant ResourceServer
+
+Client -> AuthorizationServer: Initiate Authorization Request
+AuthorizationServer -> Client: Respond with Authorization Challenge
+Client -> AuthorizationServer: Request Access Token + Mutual TLS Certificate
+AuthorizationServer -> AuthorizationServer: Authenticate Mutual TLS Certificate
+AuthorizationServer -> Client: Respond with Access Token + TLS Bound Metadata
+Client -> ResourceServer: Request Protected Resource + Access Token
+ResourceServer -> ResourceServer: Extract TLS Client Certificate
+ResourceServer -> ResourceServer: Validate Access Token + TLS Binding
+ResourceServer -> Client: Respond with Protected Resource
+@enduml

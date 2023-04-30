@@ -23,3 +23,33 @@ body {
   color: #fff;	
 }
 
+.markdown-body table th {
+  font-weight: 600;
+}
+
+table th
+{
+  background-color: #1a60f5;
+  color: #ffffff;
+  padding: 6px 13px;
+  border: 2px solid #d0d7de;
+}
+
+table td {
+  padding: 6px 13px;
+  border: 2px solid #d0d7de;
+}
+
+table tr {
+  background-color: #ffffff;
+  border-top: 1px solid hsla(210,18%,87%,1);
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.image-20 {
+  max-width: 20%;
+  width: 50%;
+}
