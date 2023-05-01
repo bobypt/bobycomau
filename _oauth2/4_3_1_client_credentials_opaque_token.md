@@ -2,9 +2,9 @@
 name: Setup playground
 layout: default
 ---
-# Grant type - client credentials using opaque tokens
+# Grant type - Client credentials - Resource access using opaque tokens
 
-## Client credentials - Opaque token
+## Client credentials - Resource access using Opaque token
 
 ### Sequence Diagram
 ![Client credentials - Opaque token](/diagrams/oauth2/sequence_diagrams/client_credentials_opaque_token/client_credentials_opaque_token.png){:class="img-responsive"}
