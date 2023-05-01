@@ -38,8 +38,8 @@ Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on le
 ## 04 - OAuth Grant types
  - Authorization code
  - PKCE
- - [Client credentials - Using opaque tokens](/oauth2/4-3-1-client-credentials-opaque-token) 
- - [Client credentials - Using self contained tokens (JWT)](/oauth2/4-3-2-client-credentials-jwt-token)
+ - [Client credentials - Resource access using opaque tokens](/oauth2/4-3-1-client-credentials-opaque-token) 
+ - [Client credentials - Resource access using self contained tokens (JWT)](/oauth2/4-3-2-client-credentials-jwt-token)
  - Device token
  - Refresh Token
  - JWT bearer
@@ -47,7 +47,7 @@ Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on le
  - Password grant (Legacy)
 
 
-## 04 - Clients
+## 04 - Client Types
  - confidential clients
  - public clients
 
@@ -62,8 +62,8 @@ Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on le
  
 
 ## 06 - Token management
- - Token introspection
- - Token revocation
+ - [Token introspection](/oauth2/6-1-token-introspection)
+ - [Token revocation](/oauth2/6-2-token-revocation)
 
 
 ## 07 - Proof of possession

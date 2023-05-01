@@ -2,9 +2,9 @@
 name: Setup playground
 layout: default
 ---
-# Grant type - client credentials
+# Grant type - Client credentials - Resource access using self contained tokens (JWT)
 
-## Client credentials - JWT token (Self contained token)
+## Client credentials - Resource access using JWT token (Self contained token)
 
 ### Sequence Diagram
 ![Client credentials - Opaque token](/diagrams/oauth2/sequence_diagrams/client_credentials_jwt_token/client_credentials_jwt_token.png){:class="img-responsive"}
