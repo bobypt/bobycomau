@@ -6,6 +6,10 @@ layout: default
 
 ## Client credentials - Resource access using Opaque token
 
+## Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SSvdnKnGdmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
 ### Sequence Diagram
 ![Client credentials - Opaque token](/diagrams/oauth2/sequence_diagrams/client_credentials_opaque_token/client_credentials_opaque_token.png){:class="img-responsive"}
 
