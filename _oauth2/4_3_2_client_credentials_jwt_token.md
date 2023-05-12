@@ -6,6 +6,10 @@ layout: default
 
 ## Client credentials - Resource access using JWT token (Self contained token)
 
+## Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Px3u5yWmY_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
 ### Sequence Diagram
 ![Client credentials - Opaque token](/diagrams/oauth2/sequence_diagrams/client_credentials_jwt_token/client_credentials_jwt_token.png){:class="img-responsive"}
 
