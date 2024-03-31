@@ -9,10 +9,10 @@ OAuth2 is an open standard for authorization that enables secure access to APIs.
 If you are a java developer familiar with spring boot, then this series is for you. Spring Boot provides a number of features to simplify the process of building web applications, including support for RESTful APIs, database integration, and security.
 
 ### Features and Benefits
- - **Start a local OAuth2 AUth server, Resource server, sample client and a dateway server using couple of simple commands.**
- - You can enable java logs and see **http wire logs** and http traffic between client->OAuth server, client->Resource server and Resource server->OAuth server
+ - **Start a local OAuth2 Auth server, Resource server, sample client and a gateway server using couple of simple commands.**
+ - Enable java logs and see **http wire logs** and http traffic between client->OAuth server, client->Resource server and Resource server->OAuth server
  - Configure different types of **OAuth grant types, oAuth client authentication, tokens** etc.
- - Make changes and build your expertise slowly.
+ - Make changes to the java code and build your expertise slowly.
  - **Postman collection** provided can be used to see sample requests and response.
  - Import the code to your favourite IDE and **run / debug** inside your IDE eg: Intellij, eclipse, VSCode etc
 
