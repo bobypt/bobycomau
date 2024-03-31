@@ -26,7 +26,7 @@ Java Security Playground: Learn and Experiment with OAuth 2.0!" is a hands-on le
   - [Start playground](/oauth2/2-1-playground)
   - [Hello Token example](/oauth2/2-2-hello-token)
   - [Playground architecture](/oauth2/2-3-playground-architecture)
-  
+  - [User journeys](/oauth2/2-4-user-journey-http-logs)  
 
 ## 03 - Tokens
  - Access tokens
