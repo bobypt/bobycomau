@@ -25,6 +25,9 @@ collections:
   posts:
     permalink: /:categories/:year/:month/:day/:title.html
     output: true
+  ai:
+    output: true
+    permalink: /ai/:name
 plugins:
   - jekyll-sitemap
   - jekyll-feed
