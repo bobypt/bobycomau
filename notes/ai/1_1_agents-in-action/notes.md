@@ -1,4 +1,4 @@
-# Notes: AI Basics – A world of agents working for you
+# Notes: Agents in Action – A world of agents working for you
 
 ## Article goal
 

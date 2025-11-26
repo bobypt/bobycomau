@@ -1,6 +1,6 @@
 ---
 title: "A Monday morning in a world of AI agents"
-related_ai_post: "/ai/basics"
+related_ai_post: "/ai/agents-in-action"
 status: draft          # draft | scheduled | posted
 scheduled_for: 2025-01-01
 hashtags: ["#AgenticAI", "#LLM", "#AIEngineering"]
@@ -21,6 +21,6 @@ Core points:
 
 Call to action:
 
-- I sketched out this “world of agents” and how to think about it in the first article of my Agentic AI series here: /ai/basics
+- I sketched out this “world of agents” and how to think about it in the first article of my Agentic AI series here: /ai/agents-in-action
 
 
