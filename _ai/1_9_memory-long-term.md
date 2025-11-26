@@ -1,6 +1,6 @@
 ---
 title: Memory Strategies – Long Term
-layout: default
+layout: agentic
 permalink: /ai/memory-long-term
 series: "Agentic AI Foundations"
 sequence: 9

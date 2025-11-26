@@ -1,6 +1,6 @@
 ---
 title: Building Agents
-layout: default
+layout: agentic
 permalink: /ai/building-agents
 series: "Agentic AI Foundations"
 sequence: 7

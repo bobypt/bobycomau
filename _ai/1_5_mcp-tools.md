@@ -1,6 +1,6 @@
 ---
 title: MCP Tools
-layout: default
+layout: agentic
 permalink: /ai/mcp-tools
 series: "Agentic AI Foundations"
 sequence: 5

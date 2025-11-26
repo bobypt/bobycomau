@@ -1,6 +1,6 @@
 ---
 title: Agents in Action
-layout: default
+layout: agentic
 permalink: /ai/agents-in-action
 series: "Agentic AI Foundations"
 sequence: 1

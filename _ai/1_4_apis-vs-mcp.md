@@ -1,6 +1,6 @@
 ---
 title: APIs vs MCP Servers
-layout: default
+layout: agentic
 permalink: /ai/apis-vs-mcp
 series: "Agentic AI Foundations"
 sequence: 4

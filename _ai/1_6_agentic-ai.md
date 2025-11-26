@@ -1,6 +1,6 @@
 ---
 title: Agentic AI Patterns
-layout: default
+layout: agentic
 permalink: /ai/agentic-ai
 series: "Agentic AI Foundations"
 sequence: 6

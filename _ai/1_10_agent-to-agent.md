@@ -1,6 +1,6 @@
 ---
 title: Agent-to-Agent (A2A)
-layout: default
+layout: agentic
 permalink: /ai/agent-to-agent
 series: "Agentic AI Foundations"
 sequence: 10

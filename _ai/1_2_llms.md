@@ -1,6 +1,6 @@
 ---
 title: Large Language Models
-layout: default
+layout: agentic
 permalink: /ai/llms
 series: "Agentic AI Foundations"
 sequence: 2

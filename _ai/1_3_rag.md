@@ -1,6 +1,6 @@
 ---
 title: Retrieval Augmented Generation
-layout: default
+layout: agentic
 permalink: /ai/rag
 series: "Agentic AI Foundations"
 sequence: 3

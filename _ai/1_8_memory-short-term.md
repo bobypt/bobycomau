@@ -1,6 +1,6 @@
 ---
 title: Memory Strategies – Short Term
-layout: default
+layout: agentic
 permalink: /ai/memory-short-term
 series: "Agentic AI Foundations"
 sequence: 8
