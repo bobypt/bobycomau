@@ -5,7 +5,7 @@ permalink: /ai/basics
 series: "Agentic AI Foundations"
 sequence: 1.1
 tags: [ai, foundations, agents]
-status: published
+status: draft
 ---
 
 # AI Basics

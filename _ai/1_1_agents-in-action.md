@@ -3,12 +3,15 @@ title: Agents in Action
 layout: default
 permalink: /ai/agents-in-action
 series: "Agentic AI Foundations"
-sequence: 1.1
+sequence: 1
 tags: [ai, foundations, agents]
 status: published
 ---
 
 # Agents in Action
+
+<img src="{{ '/images/ai/agents_working_for_you_2.png' | relative_url }}" alt="Agentic AI assistants working for you 24×7" class="ai-hero" />
+
 
 Imagine waking up on a Monday and your agents have already been working for you for hours.
 Your personal research agent has triaged overnight papers and summarized just the 3 that

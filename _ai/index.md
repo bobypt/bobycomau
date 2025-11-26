@@ -9,26 +9,27 @@ redirect_from: /ai/home
 
 # Agentic AI
 
-<img src="{{ '/diagrams/ai/agents_working_for_you.png' | relative_url }}" alt="Agentic AI assistants working for you 24×7" class="ai-hero" />
+<img src="{{ '/images/ai/agents_working_for_you.png' | relative_url }}" alt="Agentic AI assistants working for you 24×7" class="ai-hero" />
 
 Welcome to the AI series hub. We focus on simple, autonomous, secure, and practical agents running in the cloud, working for you 24×7—including a hands-on guide to deploy, scale, and observe these agents reliably in production.
 
 
 
-## Planned topics
+## Topics
 
 {% assign ai_posts = site.ai | where:"series","Agentic AI Foundations" | sort:"sequence" %}
 
 <ul>
 {% for post in ai_posts %}
+  {% assign label = post.sequence | prepend: '1.' %}
   {% if post.status != "draft" %}
     <li>
-      {{ post.sequence }}:
+      {{ label }}:
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       {% if post.short_summary %}- {{ post.short_summary }}{% endif %}
     </li>
   {% else %}
-    <li>{{ post.sequence }}: {{ post.title }} – coming soon…</li>
+    <li>{{ label }}: {{ post.title }} – coming soon…</li>
   {% endif %}
 {% endfor %}
 </ul>
