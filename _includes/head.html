@@ -17,6 +17,64 @@
     <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet">    
     <link rel="stylesheet" href="/css/main.css">    
     <link href="/css/syntax.css" rel="stylesheet">
+    
+    <!-- Mermaid diagram animations -->
+    <style>
+      /* Make arrow heads white */
+      .mermaid svg marker path {
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
+      }
+      
+      .mermaid svg marker polygon {
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
+      }
+      
+      /* Animate Mermaid diagram lines */
+      .mermaid svg .edgePath path {
+        stroke: #ffffff !important;
+        stroke-dasharray: 8,4;
+        animation: dash 15s linear infinite;
+      }
+      
+      @keyframes dash {
+        0% {
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dashoffset: -1000;
+        }
+      }
+      
+      /* Moving dots along paths */
+      .mermaid svg .edgePath .moving-dot {
+        fill: #ffffff;
+        r: 4;
+        animation: moveAlongPath 3s linear infinite;
+      }
+      
+      @keyframes moveAlongPath {
+        0% {
+          offset-distance: 0%;
+        }
+        100% {
+          offset-distance: 100%;
+        }
+      }
+      
+      /* Smooth transitions for nodes */
+      .mermaid svg .node rect,
+      .mermaid svg .node circle {
+        transition: all 0.3s ease;
+      }
+      
+      .mermaid svg .node:hover rect,
+      .mermaid svg .node:hover circle {
+        filter: brightness(1.1);
+        transform: scale(1.02);
+      }
+    </style>
 
 </head>
 

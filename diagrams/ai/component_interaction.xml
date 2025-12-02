@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.2">
+  <diagram name="Component Interaction Flow" id="flow-diagram">
+    <mxGraphModel dx="1771" dy="962" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="A" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;strokeColor=#1e40af;strokeWidth=2;fontColor=#ffffff;fontStyle=1" value="User Message" vertex="1">
+          <mxGeometry height="60" width="200" x="480" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="B" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f59e0b;strokeColor=#d97706;strokeWidth=2;fontColor=#ffffff;fontStyle=1" value="Support Agent&lt;br&gt;Validates User Token" vertex="1">
+          <mxGeometry height="60" width="200" x="480" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="C" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f59e0b;strokeColor=#d97706;strokeWidth=2;fontColor=#ffffff;fontStyle=1" value="Support Agent&lt;br&gt;Generates Service Account Token" vertex="1">
+          <mxGeometry height="60" width="200" x="480" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="D" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#10b981;strokeColor=#059669;strokeWidth=2;fontColor=#ffffff;fontStyle=1" value="MCP Server&lt;br&gt;Validates Service Account Token" vertex="1">
+          <mxGeometry height="60" width="200" x="480" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="E" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#10b981;strokeColor=#059669;strokeWidth=2;fontColor=#ffffff;fontStyle=1" value="MCP Server&lt;br&gt;Executes Tool, Queries Database" vertex="1">
+          <mxGeometry height="60" width="200" x="480" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="F" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#10b981;strokeColor=#059669;strokeWidth=2;fontColor=#ffffff;fontStyle=1" value="MCP Server&lt;br&gt;Returns JSON-RPC 2.0 Response" vertex="1">
+          <mxGeometry height="60" width="200" x="480" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="G" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f59e0b;strokeColor=#d97706;strokeWidth=2;fontColor=#ffffff;fontStyle=1" value="Support Agent&lt;br&gt;Processes Response, Generates Reply" vertex="1">
+          <mxGeometry height="60" width="200" x="480" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="H" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563eb;strokeColor=#1e40af;strokeWidth=2;fontColor=#ffffff;fontStyle=1" value="User Receives Response" vertex="1">
+          <mxGeometry height="60" width="200" x="480" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="A" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#0000FF);strokeWidth=2;dashed=1;dashPattern=8 4;endArrow=block;endFill=1;endSize=8;fillColor=#000000;fontColor=#000000;fontSize=12;flowAnimation=1;" target="B" value="Bearer Token">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="B" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#0000FF);strokeWidth=2;dashed=1;dashPattern=8 4;endArrow=block;endFill=1;endSize=8;fillColor=#000000;flowAnimation=1;" target="C" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="C" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#0000FF);strokeWidth=2;dashed=1;dashPattern=8 4;endArrow=block;endFill=1;endSize=8;fillColor=#000000;fontColor=#000000;fontSize=12;flowAnimation=1;" target="D" value="JSON-RPC 2.0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="D" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#0000FF);strokeWidth=2;dashed=1;dashPattern=8 4;endArrow=block;endFill=1;endSize=8;fillColor=#000000;flowAnimation=1;" target="E" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" edge="1" parent="1" source="E" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#0000FF);strokeWidth=2;dashed=1;dashPattern=8 4;endArrow=block;endFill=1;endSize=8;fillColor=#000000;flowAnimation=1;" target="F" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" edge="1" parent="1" source="F" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#0000FF);strokeWidth=2;dashed=1;dashPattern=8 4;endArrow=block;endFill=1;endSize=8;fillColor=#000000;fontColor=#000000;fontSize=12;flowAnimation=1;" target="G" value="Response">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" edge="1" parent="1" source="G" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#0000FF);strokeWidth=2;dashed=1;dashPattern=8 4;endArrow=block;endFill=1;endSize=8;fillColor=#000000;flowAnimation=1;" target="H" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -7,17 +7,16 @@ redirect_from: /ai/home
 ---
 
 
-# Agentic AI
+# Build and Maintain a Reliable Secure AI Agent in the Cloud
 
 <img src="{{ '/images/ai/agents_working_for_you.png' | relative_url }}" alt="Agentic AI assistants working for you 24×7" class="ai-hero" />
 
-Welcome to the AI series hub. We focus on simple, autonomous, secure, and practical agents running in the cloud, working for you 24×7—including a hands-on guide to deploy, scale, and observe these agents reliably in production.
-
+Welcome to the AI series hub. This series provides a comprehensive guide to building, deploying, and maintaining production-ready AI agents in the cloud. Learn how to architect secure, scalable agents using Google ADK, MCP protocol, and cloud-native services like Cloud Run and Firebase.
 
 
 ## Topics
 
-{% assign ai_posts = site.ai | where:"series","Agentic AI Foundations" | sort:"sequence" %}
+{% assign ai_posts = site.ai | where:"series","Build and Maintain a Reliable Secure AI Agent in the Cloud" | sort:"sequence" %}
 
 <ul>
 {% for post in ai_posts %}
