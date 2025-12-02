@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/main.css">    
     <link href="/css/syntax.css" rel="stylesheet">
     
-    <!-- Mermaid diagram animations -->
+    <!-- Mermaid diagram styles & animations -->
     <style>
       /* Make arrow heads white */
       .mermaid svg marker path {
@@ -73,6 +73,44 @@
       .mermaid svg .node:hover circle {
         filter: brightness(1.1);
         transform: scale(1.02);
+      }
+
+      /* Sequence diagrams: make message lines thick and white */
+      .mermaid svg .messageLine0,
+      .mermaid svg .messageLine1,
+      .mermaid svg .messageLine2,
+      .mermaid svg .loopLine,
+      .mermaid svg .actor-line {
+        stroke: #ffffff !important;
+        stroke-width: 2.5px !important;
+      }
+
+      /* Make diagrams larger and more readable */
+      .mermaid {
+        font-size: 18px; /* increase overall diagram font size */
+        overflow: visible !important; /* prevent inner scrollbars */
+      }
+
+      /* Allow SVGs to grow more and increase visual height */
+      .mermaid svg {
+        width: 100% !important;      /* fit container width */
+        max-width: 100% !important;  /* avoid horizontal clipping */
+        height: auto !important;     /* keep aspect ratio */
+        margin-bottom: 2rem;
+      }
+
+      /* Make all diagram text white and larger */
+      .mermaid svg text {
+        fill: #ffffff !important;
+        font-size: 16px !important;
+      }
+
+      /* Sequence diagram message labels */
+      .mermaid svg .messageText,
+      .mermaid svg .loopText,
+      .mermaid svg .actor > text {
+        fill: #ffffff !important;
+        font-size: 16px !important;
       }
     </style>
 

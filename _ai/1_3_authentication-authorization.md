@@ -15,27 +15,43 @@ Security is critical for production AI agents. This article covers the authentic
 
 ## Authentication Flow
 
-```
-1. User authenticates with Firebase (frontend)
-   └─> Receives Firebase ID token
+```mermaid
+sequenceDiagram
+    autonumber
+    participant U as User (Web / WhatsApp)
+    participant FE as Frontend (Next.js / Channel)
+    participant FA as Firebase Auth
+    participant SA as Support Agent
+    participant ADM as Firebase Admin SDK
+    participant MCP as MCP Servers
 
-2. Frontend sends request to Support Agent
-   └─> Header: Authorization: Bearer <user-firebase-token>
+    %% 1. User authenticates with Firebase
+    U->>FE: Sign in (email/password, OAuth, etc.)
+    FE->>FA: Auth request
+    FA-->>FE: Firebase ID token (user-firebase-token)
 
-3. Support Agent validates user token
-   └─> Extracts user ID, email, permissions
+    %% 2. Frontend calls Support Agent with user token
+    FE->>SA: POST /process (Authorization: Bearer user token)
+    SA->>FA: Verify ID token
+    FA-->>SA: Decoded token (uid, email, permissions)
 
-4. Support Agent generates service account token
-   └─> Uses Firebase Admin SDK
-   └─> Token stored in MCP_AUTH_TOKEN environment variable
-   └─> Auto-refreshes when expiring (within 5 minutes)
+    %% 3. Support Agent generates service account token
+    SA->>ADM: Create custom token for service account
+    ADM-->>SA: Service account token (JWT)
+    Note right of SA: Cache in MCP_AUTH_TOKEN and\nrefresh before expiry
 
-5. Agent tools call MCP servers
-   └─> Header: Authorization: Bearer <service-account-token>
+    %% 4. Agent tools call MCP servers with service token
+    SA->>MCP: JSON-RPC 2.0 over HTTP\n(Authorization: Bearer service token)
 
-6. MCP servers verify service account token
-   └─> Detects issuer format: *.iam.gserviceaccount.com
-   └─> Grants full access (read/write permissions)
+    %% 5. MCP servers validate service account token
+    MCP->>FA: Verify ID token (service account)
+    FA-->>MCP: Decoded token (issuer, claims)
+    Note right of MCP: Issuer ends with\n.iam.gserviceaccount.com\n→ treat as trusted service account
+
+    %% 6. MCP responds and agent replies to user
+    MCP-->>SA: JSON-RPC 2.0 response
+    SA-->>FE: HTTP 200 OK (response, conversation_id)
+    FE-->>U: Render agent reply
 ```
 
 ## Token Types
