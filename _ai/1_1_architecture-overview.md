@@ -46,38 +46,7 @@ graph TD
     linkStyle 5 stroke:#ffffff,stroke-width:2px
 ```
 
-**ASCII Diagram (for reference):**
 
-```
-┌─────────────────┐
-│   Web Client    │ (Next.js Frontend)
-│  (Firebase Auth)│
-└────────┬────────┘
-         │ Bearer Token (User Firebase Token)
-         │
-         ▼
-┌─────────────────────────────────────────┐
-│     Support Agent (FastAPI)             │
-│  - Google ADK Agent (Gemini 2.5 Flash)  │
-│  - Token Exchange: User → Service Token │
-│  - MCP Client (JSON-RPC 2.0)            │
-└────────┬────────────────────────────────┘
-         │
-         ├─────────────────┬─────────────────┐
-         │                 │                 │
-         ▼                 ▼                 ▼
-    ┌─────────┐      ┌──────────┐     ┌─────────┐
-    │ Product │      │   CRM    │     │   RAG    │
-    │Catalogue│      │   MCP    │     │   MCP    │
-    │   MCP   │      │  Server  │     │  Server  │
-    └─────────┘      └──────────┘     └─────────┘
-         │                 │                 │
-         │                 │                 │
-    ┌─────────┐      ┌──────────┐     ┌─────────┐
-    │ LanceDB │      │ Firestore│     │  Vector  │
-    │ (Vector)│      │   (NoSQL) │     │   Store  │
-    └─────────┘      └──────────┘     └─────────┘
-```
 
 
 ## Key Design Patterns

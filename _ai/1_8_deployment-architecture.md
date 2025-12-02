@@ -176,44 +176,6 @@ graph TD
     linkStyle 19 stroke:#999999,stroke-width:3px,stroke-dasharray: 5 5
 ```
 
-**ASCII Diagram (for reference):**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Google Cloud Platform                     │
-│                                                              │
-│  ┌──────────────────────────────────────────────────────┐  │
-│  │           Firebase Hosting (Next.js Web App)         │  │
-│  │  URL: https://{project-id}.web.app                   │  │
-│  └──────────────┬───────────────────────────────────────┘  │
-│                 │                                           │
-│                 │ Firebase Auth                             │
-│                 │                                           │
-│  ┌──────────────▼───────────────────────────────────────┐  │
-│  │      Cloud Run: Support Agent (FastAPI)               │  │
-│  │  URL: https://agent-order-receiver-xxx.run.app        │  │
-│  └──────────────┬───────────────────────────────────────┘  │
-│                 │                                           │
-│                 ├─────────────────┬─────────────────┐        │
-│                 │                 │                 │        │
-│  ┌──────────────▼──────┐  ┌──────▼──────┐  ┌──────▼──────┐ │
-│  │ Cloud Run: Product  │  │ Cloud Run:  │  │ Cloud Run:  │ │
-│  │ Catalogue MCP       │  │ CRM MCP     │  │ WhatsApp    │ │
-│  │ URL: https://mcp-   │  │ URL: https://│  │ Webhook     │ │
-│  │ product-catalogue-  │  │ mcp-crm-xxx │  │ URL: https://│ │
-│  │ xxx.run.app         │  │ .run.app    │  │ whatsapp-   │ │
-│  │ - LanceDB (Vector)  │  │ - Firestore │  │ webhook-xxx │ │
-│  └─────────────────────┘  └─────────────┘  └──────┬───────┘ │
-│                                                    │         │
-│  ┌─────────────────────────────────────────────────▼───┐  │
-│  │         Google Cloud Services                        │  │
-│  │  - Secret Manager (Service Account Keys)              │  │
-│  │  - Cloud Logging                                      │  │
-│  │  - Cloud Monitoring                                   │  │
-│  │  - IAM (Identity & Access Management)                │  │
-│  └──────────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────────┘
-```
 
 ## Cloud Run Configuration
 

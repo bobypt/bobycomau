@@ -144,7 +144,6 @@ The CRM MCP manages customer data operations.
 
 ## Component Interaction Flow
 
-<img src="{{ '/images/ai/component_interaction.svg' | relative_url }}" alt="Component interaction" class="ai-hero" />
 
 ```mermaid
 graph TD
