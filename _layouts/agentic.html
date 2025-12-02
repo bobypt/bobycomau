@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% seo %} {% include head.html %}
+
+<body>
+  {% include nav.html %}
+
+  <div id="post" class="container post lead">
+    <div>
+      <p>
+        <a href="{{ '/ai' | relative_url }}">&larr; Back to Agentic AI hub</a>
+      </p>
+
+      {{ content }}
+
+      <p>
+        <a href="{{ '/ai' | relative_url }}">&larr; Back to Agentic AI hub</a>
+      </p>
+    </div>
+  </div>
+
+  {% include footer.html %} {% include scripts.html %}
+</body>
+
+</html>
+
+

@@ -11,7 +11,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 5
-exclude: ["less","Dockerfile","README.md", "*.excalidraw"]
+exclude: ["less","Dockerfile","README.md", "*.excalidraw", "notes", "_linkedin"]
 author: Boby Thomas
 kramdown:
   input: GFM
@@ -25,6 +25,11 @@ collections:
   posts:
     permalink: /:categories/:year/:month/:day/:title.html
     output: true
+  ai:
+    output: true
+    permalink: /ai/:name
+  linkedin:
+    output: false
 plugins:
   - jekyll-sitemap
   - jekyll-feed
