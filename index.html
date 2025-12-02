@@ -2,24 +2,167 @@
 layout: page
 ---
 
+<style>
+  .hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 5rem 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
 
-    <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-6">
-            <div class="p-5">
-              <h1>Welcome!</h1>
-              <p class="lead">Welcome to my virtual home… I dream of making an impact and changing the world. My mind is always thinking of new ideas, but my pragmatism holds me back. However, my fingers never stay still.</p>
-            </div>
-          </div>
-          <div class="col-6">
-              <div class="thumbnail">
-                  <img src="/images/side_full.png" alt="Boby Thomas" class="img-fluid">
-              </div>
-          </div>
-      </div>
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: white;
+  }
 
+  .hero-content .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    line-height: 1.6;
+    color: white;
+  }
+
+  .hero-image {
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .hero-image img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .cta-section {
+    background: #f8f9fa;
+    padding: 4rem 0;
+  }
+
+  .cta-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .cta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .cta-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .cta-card p {
+    color: #6c757d;
+    margin-bottom: 0;
+  }
+
+  .cta-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #667eea;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    .hero-content .lead {
+      font-size: 1.25rem;
+    }
+    .hero-section {
+      padding: 3rem 0;
+      min-height: auto;
+    }
+  }
+</style>
+
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <div class="hero-content">
+          <h1>Welcome to My Digital Space</h1>
+          <p class="lead">I dream of making an impact and changing the world. My mind is always thinking of new ideas, but my pragmatism holds me back. However, my fingers never stay still.</p>
+          <div class="mt-4">
+            <a href="/ai" class="btn btn-light btn-lg mr-3 mb-2">Explore Agentic AI</a>
+            <a href="/oauth2" class="btn btn-outline-light btn-lg mb-2">Learn OAuth2</a>
+          </div>
         </div>
       </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="hero-image text-center">
+          <img src="/images/side_full.png" alt="Boby Thomas" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </section>
+<section class="cta-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-4 mb-3">Explore My Work</h2>
+        <p class="lead text-muted">Dive into technical guides, tutorials, and insights</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="/ai" class="cta-card">
+          <div class="cta-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>Agentic AI</h3>
+          <p>Learn how to build and deploy production-ready AI agents in the cloud. Complete guide covering architecture, security, and deployment.</p>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="/oauth2" class="cta-card">
+          <div class="cta-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>OAuth2</h3>
+          <p>Comprehensive OAuth2 implementation guide with hands-on examples, security best practices, and real-world scenarios.</p>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="/posts/" class="cta-card">
+          <div class="cta-icon">
+            <i class="fas fa-archive"></i>
+          </div>
+          <h3>Archive</h3>
+          <p>Browse through my collection of technical articles, tutorials, and insights on software development and cloud technologies.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
